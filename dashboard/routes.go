@@ -17,14 +17,14 @@ func (d *Dashboard) setRoutes() {
 	d.engine.LoadHTMLGlob("web/templates/**/*")
 	d.engine.Use(static.Serve("/web/assets", static.LocalFile("web/assets", false)))
 	d.engine.GET("/", d.IndexHandler)
-	d.engine.GET("/memento/queue", d.QueueHandler)
-	d.engine.POST("/memento/queue", d.QueuePostHandler)
-	d.engine.GET("/memento/pause", d.PauseHandler)
-	d.engine.POST("/memento/pause", d.PausePostHandler)
-	d.engine.GET("/memento/config", d.ConfigHandler)
-	d.engine.POST("/memento/config", d.ConfigPostHandler)
-	d.engine.GET("/memento/reset", d.ResetHandler)
-	d.engine.POST("/memento/reset", d.ResetPostHandler)
+	d.engine.GET("/queue", d.QueueHandler)
+	d.engine.POST("/queue", d.QueuePostHandler)
+	d.engine.GET("/pause", d.PauseHandler)
+	d.engine.POST("/pause", d.PausePostHandler)
+	d.engine.GET("/config", d.ConfigHandler)
+	d.engine.POST("/config", d.ConfigPostHandler)
+	d.engine.GET("/reset", d.ResetHandler)
+	d.engine.POST("/reset", d.ResetPostHandler)
 }
 
 func dict(values ...interface{}) (map[string]interface{}, error) {

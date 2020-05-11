@@ -1,10 +1,10 @@
 {{ define "nav" }}
     <nav class="fixed bottom-0 sm:top-0 left-0 w-screen sm:w-20 h-20 sm:h-screen flex sm:flex-col items-center sm:justify-between bg-white z-30 border-t sm:border-t-0 sm:border-r border-gray-300">
-        <a href="/" class="hidden sm:flex justify-center w-full px-4 py-6">
+        <a href="/memento" class="hidden sm:flex justify-center w-full px-4 py-6">
             <img src="/web/assets/images/logo.svg" class="w-10" alt="logo"/>
         </a>
         <ul class="flex sm:flex-col text-xl sm:text-2xl w-4/5 sm:w-full">
-            {{ template "nav-item" dict "Color" "text-gray-500" "Hover" "blue-900" "Href" "/" "Icon" "home" "Name" "Home"}}
+            {{ template "nav-item" dict "Color" "text-gray-500" "Hover" "blue-900" "Href" "/memento" "Icon" "home" "Name" "Home"}}
             {{ template "nav-item" dict "Color" "text-gray-500" "Hover" "blue-900" "Href" "/memento/queue" "Icon" "clipboard-list-outline" "Name" "Queue blocks"}}
             {{ template "nav-item" dict "Color" "text-gray-500" "Hover" "blue-900" "Href" "/memento/pause" "Icon" "play-pause" "Name" "Start/stop"}}
             {{ template "nav-item" dict "Color" "text-gray-500" "Hover" "blue-900" "Href" "/memento/config"  "Icon" "file-settings-variant" "Name" "Configuration"}}
