@@ -12,7 +12,7 @@
                     <p class="font-semibold text-blue-900">Queue single block</p>
                     <p class="text-gray-500 text-sm">Add a single block to the TODO list</p>
 
-                    <form method="post" action="/queue" class="flex flex-col flex-start pt-4">
+                    <form method="post" action="/memento/queue" class="flex flex-col flex-start pt-4">
                         <input type="hidden" name="type" value="single">
 
                         <div class="my-2">
@@ -30,7 +30,7 @@
                     <p class="font-semibold text-blue-900">Queue interval</p>
                     <p class="text-gray-500 text-sm">Add all the blocks from start to end into the TODO list.</p>
 
-                    <form method="post" action="/queue" class="flex flex-col pt-4">
+                    <form method="post" action="/memento/queue" class="flex flex-col pt-4">
                         <input type="hidden" name="type" value="interval">
 
                         <div class="flex my-2">

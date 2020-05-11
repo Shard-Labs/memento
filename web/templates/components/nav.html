@@ -5,12 +5,12 @@
         </a>
         <ul class="flex sm:flex-col text-xl sm:text-2xl w-4/5 sm:w-full">
             {{ template "nav-item" dict "Color" "text-gray-500" "Hover" "blue-900" "Href" "/" "Icon" "home" "Name" "Home"}}
-            {{ template "nav-item" dict "Color" "text-gray-500" "Hover" "blue-900" "Href" "/queue" "Icon" "clipboard-list-outline" "Name" "Queue blocks"}}
-            {{ template "nav-item" dict "Color" "text-gray-500" "Hover" "blue-900" "Href" "/pause" "Icon" "play-pause" "Name" "Start/stop"}}
-            {{ template "nav-item" dict "Color" "text-gray-500" "Hover" "blue-900" "Href" "/config"  "Icon" "file-settings-variant" "Name" "Configuration"}}
+            {{ template "nav-item" dict "Color" "text-gray-500" "Hover" "blue-900" "Href" "/memento/queue" "Icon" "clipboard-list-outline" "Name" "Queue blocks"}}
+            {{ template "nav-item" dict "Color" "text-gray-500" "Hover" "blue-900" "Href" "/memento/pause" "Icon" "play-pause" "Name" "Start/stop"}}
+            {{ template "nav-item" dict "Color" "text-gray-500" "Hover" "blue-900" "Href" "/memento/config"  "Icon" "file-settings-variant" "Name" "Configuration"}}
         </ul>
         <ul class="flex text-xl sm:text-2xl w-1/5 sm:w-full">
-            {{ template "nav-item" dict "Color" "text-red-500" "Hover" "red-700" "Href" "/reset"  "Icon" "restart" "Name" "Reset"}}
+            {{ template "nav-item" dict "Color" "text-red-500" "Hover" "red-700" "Href" "/memento/reset"  "Icon" "restart" "Name" "Reset"}}
         </ul>
     </nav>
 {{ end }}

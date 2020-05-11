@@ -32,7 +32,7 @@ func (d *Dashboard) ConfigHandler(c *gin.Context) {
 
 func (d *Dashboard) ConfigPostHandler(c *gin.Context) {
 	if viper.ConfigFileUsed() == "" || !d.config.ConfigEnabled {
-		c.Redirect(302, "/config")
+		c.Redirect(302, "/memento/config")
 
 		return
 	}

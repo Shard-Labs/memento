@@ -13,5 +13,5 @@ func (d *Dashboard) PausePostHandler(c *gin.Context) {
 		d.core.Pause()
 	}
 
-	c.Redirect(302, "/pause")
+	c.Redirect(302, "/memento/pause")
 }
